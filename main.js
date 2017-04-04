@@ -11,6 +11,7 @@ var strike = 0;
 var ball = 0;
 while (count < 10) {
     var input = prompt('입력');
+    console.log(input)
     var inputArray = input.split('');
     strike = 0;
     ball = 0;
@@ -36,6 +37,6 @@ while (count < 10) {
         console.error('시도 횟수 초과')
         console.log(number)
     } else {
-        console.info(inputArray.join('') + ': ' + strike + '스트라이크' + ball + '볼');
+        console.info(count + ' : ' + inputArray.join('') + ': ' + strike + '스트라이크' + ball + '볼');
     }
 }
